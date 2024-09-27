@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    border-bottom: 3px solid black;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 15px;
+    height: 7%;
+    background-color: rgb(131, 131, 131);
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav a {
+    font-size: xx-large;
+    color: black;
+  }
+  
+  nav input {
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: rgb(131, 131, 131);
+    height: 30vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #articles {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding: 20px;
+  }
+  
+  .articles-img {
+    width: 100%;
+    height: 40vh;
+  }
+  
+  #search-button {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  #articles div {
+    background-color: rgb(131, 131, 131);
+    height: 100%;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-radius: 20px;
+    padding: 0 5px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 600px) {
+    nav {
+      width: 100vw;
+      height: 7%;
+    }
+  
+    nav input {
+      width: 50%;
+      font-size: x-large;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+  
+    #articles {
+      margin-top: 90px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 15px;
+    }
+  
+    footer p {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1000px) {
+    nav {
+      width: 100vw;
+      height: 7%;
+    }
+  
+    nav input {
+      width: 70%;
+      font-size: x-large;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+  
+    #articles {
+      margin-top: 90px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    }
+  
+    footer p {
+      text-align: center;
+    }
+  }
+  
