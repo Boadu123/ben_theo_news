@@ -51,7 +51,7 @@ let searchTerm;
 searchButton.addEventListener("click", async (e) => {
   e.preventDefault();
   searchTerm = searchInput.value;
-
+  
   articles = await fetcData(searchTerm);
   console.log(articles);
 
